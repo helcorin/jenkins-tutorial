@@ -1,4 +1,4 @@
-# jenkins-tutorial
+# Jenkins CI/CD
 
 Este repositório é baseado na documentação: [Build a Node.js and React app with npm](https://jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/)
 
@@ -33,7 +33,9 @@ Utilizaremos a arquitetura baseada em containers para instanciar a primeira vers
 docker-compose up
 ```
 
-## Desbloqueio <a name="Desbloqueio"></a>  #Liberando o jenkins para uso;
+## Desbloqueio <a name="Desbloqueio"></a>
+
+**Liberando o jenkins para uso;**
 
 3.1 Como esta é a primeira vez que o serviço pe inicializado será criada uma credencial provisória para acesso administrativo, essa informação será publicada ao final do processo de inicialização dos containers conforme abaixo.
 
@@ -55,7 +57,9 @@ docker logs jenkins-tutorial
 
 ---
 
-## Pipeline <a name="Pipeline"></a> #Criando o primeiro pipeline
+## Pipeline <a name="Pipeline"></a>
+
+**Criando o projeto e a integração**
 
 4.1 Crie seu projeto de pipeline no Jenkins, para isso na página **"Welcome to Jenkins!"** clique em criar **"Create New Job"**
 
@@ -88,7 +92,9 @@ No Jenkins estes pipelines podem ser escritos utilizando [uma linguagem declarat
 
 ---
 
-## Exemplo <a name="Pipeline"></a> #Criando o primeiro pipeline
+## Exemplo <a name="Pipeline"></a> 
+
+**Criando o primeiro pipeline**
 
 O conteúdo base necessário para o nosso primeiro pipeline está na raiz do repositório no arquivo JenkinsFile conforme abaixo:
 
