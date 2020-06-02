@@ -201,3 +201,5 @@ pipeline {
     }
 }
 ```
+
+7.5 A etapa adicionada é do tipo "sh" que executa um shell script, neste caso "test.sh" localizado no diretório jenkins/scripts a partir da raiz do repositório.
