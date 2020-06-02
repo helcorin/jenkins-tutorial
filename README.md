@@ -30,11 +30,14 @@ Utilizaremos a arquitetura baseada em containers para instanciar a primeira vers
 
 2.1 Como executarmeos algumas alterações durante o laboratório é necessário que você execute um [Fork deste repositório](https://help.github.com/pt/github/getting-started-with-github/fork-a-repo) para sua conta local no GitHub, utilize um repositório aberto para evitar a configurações de credenciais de acesso no CI.
 
-2.2 Acesse o servidor disponibilizado para o laboratório e caso ainda não esteja disponível execute um clone deste repositório, em seguida inicie o stack do Jenkins a partir da raiz do projeto:
+2.2 Acesse o servidor disponibilizado para o laboratório e caso ainda não esteja disponível execute um clone deste repositório, em seguida inicie o stack do Jenkins a partir da raiz do projeto
 
 ```sh
 docker-compose up
 ```
+
+[![asciicast](https://asciinema.org/a/335882.svg)](https://asciinema.org/a/335882)
+
 
 ## Desbloqueio <a name="Desbloqueio"></a>
 
