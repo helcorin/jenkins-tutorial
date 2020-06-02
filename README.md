@@ -8,7 +8,9 @@ verificar se o aplicativo é renderizado conforme esperado crianda nosso primeir
 
 O repositório contém um **Jenkinsfile** e um subdiretório com scripts em shell que são executados quando o Jenkins processa as etapas do Pipeline.
 
-# Objetivo:
+---
+
+# Primeiros Passos:
 
 Utilizaremos a arquitetura baseada em containers para instanciar a primeira versão do Jenkins e demonstrar a configuração de um pipeline utilizando o plugin Blue Ocean, este laboratório é baseado na documentação [Build a Node.js and React app with npm ](https://www.jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/#setup-wizard);
 
