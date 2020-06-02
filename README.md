@@ -13,7 +13,8 @@ verificar se o aplicativo é renderizado conforme esperado crianda nosso primeir
 3. [Desbloqueio](#Desbloqueio)
 4. [Pipeline](#Pipeline)
 5. [Sessões](#Sessões)
-6. [Running!](#Running!)
+6. [Running](#Running)
+7. [Test](#Test)
 
 ---
 
