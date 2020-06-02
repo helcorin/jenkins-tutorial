@@ -51,6 +51,10 @@ Obs.: Se estiver utilizando um segundo terminal ou iniciou o container em backgr
 docker logs jenkins-tutorial
 ```
 
+3.1.1 A informação que aparece ao final da tela no formato de chave no campo com a descrição "Please use the following password to proceed to installation" será utilizada para desboquear o CI, para isso acesse a URL do servidor na porta 80 e coloque a chave obtida:
+
+![alt tag](https://github.com/fiapsecdevops/jenkins-tutorial/raw/master/img-src/01.png)
+
 3.2 Depois de [desbloquear o Jenkins](https://www.jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/#unlocking-jenkins), a página **Customize Jenkins** será exibida
 
 3.3 Nesta página, clique em **"Install suggested plugins."**
@@ -144,15 +148,23 @@ Este fluxo possui um único **stage** chamado Build, e um único agente chamado 
 
 **Execute o primeiro pipeline do laboratório**
 
-6.1 Após verificarmos a esturtura por trás do pipeline faremos a primeira execução utilizando o plugin blue ocean, para isso volte para Jenkins novamente, faça login se necessário e clique em **"Open Blue Ocean"** no painél à esquerda para acessar a interface do plugin.
+6.1 Após verificarmos a esturtura por trás do pipeline faremos a primeira execução utilizando o plugin blue ocean, para isso volte para Jenkins novamente, faça login se necessário e clique em **"Open Blue Ocean"** no painél à esquerda para acessar a interface do plugin., nesta interface você provavelmente verá uma mensagem **"This job has not been run"**, clique em **"Run"**:
 
-6.2 Você provavelmente verá uma mensagem **"This job has not been run"**, clique em **"Run"** e, em seguida, clique rapidamente no link **"OPEN"** que aparece brevemente no canto inferior direito para ver Jenkins construindo seu projeto. 
+![alt tag](https://github.com/fiapsecdevops/jenkins-tutorial/raw/master/img-src/02.png)
+
+6.2 Em seguida, clique rapidamente no link **"OPEN"** que aparece brevemente no canto inferior direito para ver Jenkins construindo seu projeto:
+
+![alt tag](https://github.com/fiapsecdevops/jenkins-tutorial/raw/master/img-src/03.png)
 
 6.3 Se não foi possível clicar no link, clique na linha que aparece interface principal do Blue Ocean para acessar esse recurso.
 
 > O Blue Ocean é um plugin extremamente popular que trás como proposta repensar a experiência do usuário no CI. Ele basicamente projeta o Pipeline e cria um modelo visual para os estágios, o que reduz a desordem e aumenta a clareza para todos os membros da equipe, vale apena uma lida na documentação do projeto para os interessados em maiores detalhes;
 
 [jenkins.io: What is Blue Ocean?](https://www.jenkins.io/doc/book/blueocean/)
+
+6.4 Ao final da execução a primeira versão do pipeline estará completa:
+
+![alt tag](https://github.com/fiapsecdevops/jenkins-tutorial/raw/master/img-src/04.png)
 
 ---
 
