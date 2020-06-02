@@ -90,13 +90,6 @@ docker logs jenkins-tutorial
 
 4.8 Clique em Salvar para salvar seu novo Pipeline. Agora você está pronto para começar a criar seu [Jenkinsfile](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/);
 
-**Vantagens no uso de um arquivo declarativo como o Jenkinsfile**
-
-* Utilizando este método é possível estabelecer estratégias de Code Review para o próprio Pipeline de Integração Contínua;
-* Também é possível auditar as etapas e literalmente "rastrear" o fluxo percorrido pelo produto sendo entregue via Pipeline; 
-* Também conseguiremos um "Single source of truth" para o Pipeline, ou seja, ele poderá ser visualizado e editado por vários membros do projeto.
-
-
 No Jenkins estes pipelines podem ser escritos utilizando [uma linguagem declarativa](https://www.jenkins.io/doc/book/pipeline/syntax/) ou a linguagem de programação [Groovy](http://groovy-lang.org/syntax.html);
 
 ---
