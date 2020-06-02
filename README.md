@@ -11,7 +11,8 @@ verificar se o aplicativo é renderizado conforme esperado crianda nosso primeir
 3. [Desbloqueio](#Desbloqueio)
 4. [Pipeline](#Pipeline)
 5. [Sessões](#Sessões)
-6. [Running!](#Running!)
+6. [Running](#Running)
+6. [Test](#Test)
 
 ---
 
@@ -128,13 +129,32 @@ Este fluxo possui um único **stage** chamado Build, e um único agente chamado 
 
 5.2 A sessão **"agent"** especifica onde o Pipeline, ou um estágio específico dele será executado, essa seção deve ser obrigatoriamente declarada ao menos uma vez no nível superior de dentro do bloco de pipeline, também é possível declarar em niveis inferiores alternando entre ambientes mas este uso é opicional.
 
+```sh
+    agent {
+        docker {
+            image 'node:12-alpine' 
+            args '-p 3000:3000' 
+        }
+    }
+```
+
 > Neste exemplo para a sessão agent utilizamos o tipo Docker o que provisionará um container que será o hospedeiro do ambiente responsável por executar a etapa seguinte, essa tática tem sido muito utilizada por desenvolvedores a fim de isolar dependências dentro do Pipeline em relação ao servidor hospedando a aplicação que será construída.
 
 5.3 A sessão **"stage"** contém o ponto mais importante deste estudo, o core do pipeline, uma sequência de uma ou mais diretivas com as funções que constroem os estágios é onde a maior parte do "trabalho" descrito por um Pipeline será localizado a partir de ações como compilar, testar e implementar, etc.
 
+```sh
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'npm install' 
+            }
+        }
+    }
+```
+
 ---
 
-## Running <a name="Running!"></a> 
+## Running <a name="Running"></a> 
 
 **Execute o primeiro pipeline do laboratório**
 
