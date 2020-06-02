@@ -148,8 +148,56 @@ Este fluxo possui um único **stage** chamado Build, e um único agente chamado 
 
 [jenkins.io: What is Blue Ocean?](https://www.jenkins.io/doc/book/blueocean/)
 
+---
 
+## Test <a name="Test"></a> 
 
+**"Adicionando uma etapa de testes"**
 
+7.1 Utilizando uma versão local ou o editor ntivo do GitHub na internet abra o arquivo jenkinsfile para edição;
 
- 
+7.2 Em seguida copie e cole o bloco abaixo no seu Pipeline imediatamente sob a seção **"agent"** do arquivo Jenkinsfile:
+
+```sh
+    environment {
+        CI = 'true'
+    }
+```
+
+7.3 Além disso, adicione o seguinte bloco imediatamente após o estágio Build:
+
+```sh
+        stage('Test') {
+            steps {
+                sh './jenkins/scripts/test.sh'
+            }
+        }
+```
+
+7.4 O Conteúdo final do pipeline ficará assim:
+
+```sh
+pipeline {
+    agent {
+        docker {
+            image 'node:12-alpine'
+            args '-p 3000:3000'
+        }
+    }
+    environment {
+        CI = 'true' 
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh './jenkins/scripts/test.sh' 
+            }
+        }
+    }
+}
+```
