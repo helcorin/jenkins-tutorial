@@ -6,12 +6,10 @@ O repositório contém um aplicativo Node.js e React simples que gera
 uma página com o conteúdo "Bem-vindo ao React" e com um teste para
 verificar se o aplicativo é renderizado conforme esperado crianda nosso primeiro pipeline.
 
-O repositório contém um **Jenkinsfile** e um subdiretório com scripts em shell que são executados quando o Jenkins processa as etapas do Pipeline.
-
 1. [Requisitos](#Requisitos)
 2. [Início](#Início)
-3. [Desbloqueando Jenkins](#Desbloqueando o Jenkins)
-4. [Primeiro Pipeline](#Primeiro Pipeline)
+3. [Desbloqueio](#Desbloqueio)
+4. [Pipeline](#Pipeline)
 
 ---
 
@@ -33,7 +31,7 @@ Utilizaremos a arquitetura baseada em containers para instanciar a primeira vers
 docker-compose up
 ```
 
-## Desbloqueando o Jenkins <a name="Desbloqueando o Jenkins"></a>
+## Desbloqueio <a name="Desbloqueio"></a>  #Liberando o jenkins para uso;
 
 3.1 Como esta é a primeira vez que o serviço pe inicializado será criada uma credencial provisória para acesso administrativo, essa informação será publicada ao final do processo de inicialização dos containers conforme abaixo.
 
@@ -55,7 +53,7 @@ docker logs jenkins-tutorial
 
 ---
 
-## Primeiro Pipeline <a name="Primeiro Pipeline"></a>
+## Pipeline <a name="Pipeline"></a> #Criando o primeiro pipeline
 
 4. Crie seu projeto de pipeline no Jenkins, para isso na página **"Welcome to Jenkins!"** clique em criar **"Create New Job"**
 
