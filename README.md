@@ -2,6 +2,8 @@
 
 Este repositório é baseado na documentação: [Build a Node.js and React app with npm](https://jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/)
 
+![alt tag](https://github.com/fiapsecdevops/jenkins-tutorial/raw/master/img-src/jenkins.png)
+
 O repositório contém um aplicativo Node.js e React simples que gera
 uma página com o conteúdo "Bem-vindo ao React" e com um teste para
 verificar se o aplicativo é renderizado conforme esperado crianda nosso primeiro pipeline.
