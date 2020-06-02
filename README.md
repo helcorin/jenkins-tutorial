@@ -36,7 +36,7 @@ Utilizaremos a arquitetura baseada em containers para instanciar a primeira vers
 docker-compose up
 ```
 
-<a href="https://asciinema.org/a/335882" target="_blank"><img src="https://asciinema.org/a/335882.svg" /></a>
+[![asciicast](https://asciinema.org/a/335882.svg)](https://asciinema.org/a/335882)
 
 ## Desbloqueio <a name="Desbloqueio"></a>
 
