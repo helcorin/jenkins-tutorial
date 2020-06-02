@@ -11,7 +11,7 @@ verificar se o aplicativo é renderizado conforme esperado crianda nosso primeir
 3. [Desbloqueio](#Desbloqueio)
 4. [Pipeline](#Pipeline)
 5. [Sessões](#Sessões)
-6. [Run!](#Run!)
+6. [Running!](#Running!)
 
 ---
 
@@ -114,7 +114,9 @@ Este fluxo possui um único **stage** chamado Build, e um único agente chamado 
 
 ---
 
-## Sessões <a name="Sessões"></a> #A composição bruta de um pipeline em Jenkins
+## Sessões <a name="Sessões"></a>
+
+**A composição bruta de um pipeline em Jenkins**
 
 5.1 Um pipeline declarativo em Jenkins será sempre dividido em sessões, cada sessão possui uma função dentro do fluxo do pipeline.
 
@@ -126,7 +128,9 @@ Este fluxo possui um único **stage** chamado Build, e um único agente chamado 
 
 ---
 
-## Run! <a name="Run!"></a> #Execute o primeiro pipeline do laboratório
+## Running <a name="Running!"></a> 
+
+**Execute o primeiro pipeline do laboratório**
 
 6.1 Após verificarmos a esturtura por trás do pipeline faremos a primeira execução utilizando o plugin blue ocean, para isso volte para Jenkins novamente, faça login se necessário e clique em **"Open Blue Ocean"** no painél à esquerda para acessar a interface do plugin.
 
